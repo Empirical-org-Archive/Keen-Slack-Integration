@@ -19,9 +19,7 @@ job 'send keen stats to Quill Slack' do
   end
 
   slack do |response, step_responses|
-    binding.pry
     message "In the last 24 hours: \n
-
              #{step_responses["Student created an account"]} students created accounts
              #{step_responses["Teacher created an account"]} teachers created accounts
              #{step_responses["Teacher signed in"]} teachers signed in

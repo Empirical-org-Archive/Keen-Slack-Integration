@@ -7,18 +7,26 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    addressable (2.3.8)
     clockwork (1.2.0)
       activesupport
       tzinfo
     dotenv (2.0.2)
     i18n (0.7.0)
     json (1.8.3)
+    keen (0.9.3)
+      addressable (~> 2.3.5)
+      multi_json (~> 1.3)
     minitest (5.8.2)
+    multi_json (1.11.2)
     pushpop (0.4.0)
       clockwork
       dotenv
       sinatra
       thor
+    pushpop-keen (0.3)
+      keen
+      pushpop
     pushpop-slack (0.2.3)
       pushpop
       slack-notifier
@@ -41,6 +49,7 @@ PLATFORMS
 
 DEPENDENCIES
   pushpop
+  pushpop-keen
   pushpop-slack
 
 BUNDLED WITH
